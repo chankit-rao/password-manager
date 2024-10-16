@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li id="li-2">About
+        <p class="active" id="active"> Once you've logged into the password manager using a 'master' password, it will generate and remember your passwords for all your online accounts.</p>
+      </li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <div class="container" id="container">
+    <h1 id="heading-password">Password Manager</h1>
+    <p id="headline-password">With our password generator, you'll never have to use the same password twice.</p>
+    <h2 id="heading2">Your Passwords</h2>
+    <table>
+      <tr>
+        <th>Website</th>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Delete</th>
+      </tr>
+
+    </table>
+    <h2 id="add">Add a Password</h2>
+    <form action="" method="post">
+      <label for="website">
+        Website:
+        <input autocomplete="off" type="text" name="Website:" id="website">
+      </label>
+
+      <label for="username">
+        Username:
+        <input autocomplete="off" type="text" name="Username:" id="username">
+      </label>
+
+      <label for="password">
+        Password:
+        <input autocomplete="off" type="password" name="Password:" id="password">
+      </label>
+
+      <button id="save" title="To save password">Save</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

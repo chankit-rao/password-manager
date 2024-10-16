@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(240, 152, 89);
+}
+nav {
+  padding: 20px;
+  background-color: rgba(238, 149, 6, 0.415);
+  display: flex;
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul li{
+  list-style: none;
+  margin: 10px 33px;
+  font-size: 35px;
+  padding: 10px;
+  transition: all .2s ease;
+  border: 5px solid transparent;
+  transform: scale(1);
+  color: white;
+}
+
+ul li:hover {
+  transform: scale(1);
+  border: 5px solid red ;
+  border-radius: 10px;
+}
+
+li:nth-child(2)
+{
+  position: relative;
+}
+
+li:nth-child(2) #active{
+  position: absolute;
+  width: 800px;
+  top:80px;
+  left: -100px;
+  background-color: chartreuse;
+  padding: 20px;
+  border-radius: 15px;
+  display: none;
+}
+
+table
+{
+  empty-cells: show;
+  border-collapse: collapse;
+}
+
+:where(table,tr,td,th)
+{
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.container
+{
+  width: 80vw;
+  
+  padding: 50px;
+  /* padding-top: 150px; */
+  margin:0px auto;
+  background-color: rgb(178, 247, 110);
+}
+
+:is(h1,h2,h3)
+{
+  padding:20px 0px;
+  font-weight: bolder;
+}
+
+p+h2
+{
+  padding-bottom: 20px;
+}
+
+
+h2{
+  padding-bottom: 0px;
+}
+
+label{
+  display: block;
+  margin: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+label input{
+  height: 30px;
+  min-width: 100px;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 3px;
+  position: relative;
+  bottom: 0px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: rgb(80, 231, 98);
+}
+
+label:is(:nth-child(1)) input
+{
+  left: 35px;
+}
+
+label:is(:nth-child(2)) input{
+  left: 11px;
+}
+
+label:nth-child(3) input{
+  left: 13px;
+}
+
+#save{
+  padding: 10px;
+  margin: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  font-variant: small-caps;
+  background-color: rgb(238, 149, 6);
+  position: relative;
+  left: 200px;
+  bottom: 0px;
+  border-radius: 10px;
+  outline: 5px solid rgb(219, 131, 9);
+  outline-offset: 3px;
+  border: none;
+}
+
+#headline-password{
+  font-size: 30px;
+}
+
+#heading-password{
+  font-size: 40px;
+}
+
+#heading2{
+  font-size: 35px;
+}
+
+
+.btn{
+  padding: 10px;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  font-variant: small-caps;
+  background-color: black;
+  color: white;
+  position: relative;
+ 
+
+}
